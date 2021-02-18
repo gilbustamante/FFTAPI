@@ -1,9 +1,17 @@
+a {
+    color: rgb(50, 50, 50);
+}
+
 body {
-    /* background: rgb(61, 61, 61); */
-    background: rgb(98, 98, 98);
+    background-image: url("/img/texture.png");
     font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 1.2em;
 }
 
 main {
-    background-image: url("/img/texture.png");
+    background: rgba(180, 180, 180, 0.5)
+}
+
+li {
+    list-style: url("/img/sword.gif");
 }
