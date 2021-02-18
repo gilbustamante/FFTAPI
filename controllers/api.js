@@ -1,3 +1,3 @@
 module.exports.allEndpoints = (req, res) => {
-  res.send('test')
+  res.send('JSON response will be here');
 }
