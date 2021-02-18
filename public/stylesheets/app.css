@@ -1,0 +1,9 @@
+body {
+    /* background: rgb(61, 61, 61); */
+    background: rgb(98, 98, 98);
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+main {
+    background-image: url("/img/texture.png");
+}
