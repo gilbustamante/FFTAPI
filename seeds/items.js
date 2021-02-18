@@ -22,6 +22,7 @@ const populateItems = async () => {
   for (let item of allItems) {
     const newItem = new Item({
       name: item.name,
+      nameLower: item.name.toLowerCase(),
       location: item.location,
       price: item.price,
       type: item.type,
