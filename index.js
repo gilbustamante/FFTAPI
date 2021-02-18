@@ -5,11 +5,13 @@ if (process.env.NOVE_ENV !== 'production') {
 const mongoose = require('mongoose');
 const session  = require('express-session');
 const flash    = require('connect-flash');
+const ejsMate  = require('ejs-mate');
 const path     = require('path');
 const express  = require('express');
 const app      = express();
 
 // Requiring routes
+const apiRoutes = require('./routes/api');
 
 // Database connection
 const databaseUrl = process.env.DATABASE_URL || 'mongodb://localhost:27017/fft';
@@ -28,7 +30,7 @@ db.once('open', () => {
 // Setup
 app.engine('ejs', ejsMate);
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'public'));
+app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname, 'public')));
@@ -50,11 +52,13 @@ app.use((req, res, next) => {
   next();
 });
 
+// Using Routes
+app.use('/api', apiRoutes);
+
 // Temporary index
 app.get('/', (req, res) => {
-  res.send('It works!');
+  res.render('index');
 });
-
 
 app.listen(3000, () => {
   console.log('Server listening...');
