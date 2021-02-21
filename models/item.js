@@ -6,7 +6,6 @@ const ItemSchema = new Schema({
   nameLower: String,
   location: String,
   price: Number,
-  type: String,
   effect: String,
   description: String
 });
