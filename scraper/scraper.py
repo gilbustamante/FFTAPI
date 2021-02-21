@@ -33,11 +33,11 @@ def scrape_page():
         if detail.text:
             details.append(detail.text)
     
-    # Some of the detail lines have extra unnecessary text; this removes it
+    # Some of the detail lines have unnecessary text; this removes it
     i = 0
     while i < len(details):
         if "\n" in details[i]:
-            sep = '\n'
+            sep = "\n"
             details[i] = details[i].split(sep)[0]
         i += 1
 
@@ -50,6 +50,7 @@ def create_items_list():
     # Scrape page and return lists of item names + their details
     names, details = scrape_page()
 
+    # Split big list into smaller lists grouped by item
     items = split_list(details, 4)
 
     # Prepend the item's name to each list
@@ -57,7 +58,7 @@ def create_items_list():
     while i < len(items):
         items[i].insert(0, names[i])
         i += 1
-    
+
     return items
 
 def split_list(list, n):

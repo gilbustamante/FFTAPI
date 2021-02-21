@@ -4,6 +4,7 @@ a {
 
 body {
     background-image: url("/img/texture.png");
+    background-attachment: fixed;
     font-family: 'Ubuntu Condensed', sans-serif;
     font-size: 1.2em;
 }
