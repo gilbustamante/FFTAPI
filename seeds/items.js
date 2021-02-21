@@ -1,7 +1,5 @@
 const mongoose = require('mongoose');
-const parse    = require('csv-parse');
-const fs       = require('fs');
-const path     = require('path');
+const { processFile } = require('./helpers');
 const Item     = require('../models/item');
 
 const databaseUrl = process.env.DATABASE_URL || 'mongodb://localhost:27017/fft';
@@ -42,20 +40,6 @@ const populateItems = async () => {
   } catch (err) {
     console.log(err)
   }
-}
-
-const processFile = async (filename) => {
-  let records = []
-  const parser = fs
-    .createReadStream(path.join(__dirname, '..', 'scraper', `${filename}.csv`))
-    .pipe(parse({
-      delimiter: ',',
-      from_line: 2
-    }));
-  for await (const record of parser) {
-    records.push(record)
-  }
-  return records
 }
 
 populateItems().then(() => {
