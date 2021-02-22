@@ -1,5 +1,6 @@
-const Item  = require('../models/item');
 const Armor = require('../models/armor');
+const Helmet = require('../models/helmet');
+const Item  = require('../models/item');
 
 module.exports.allEndpoints = async (req, res) => {
   res.send('JSON response will be here');
@@ -25,4 +26,15 @@ module.exports.oneArmor = async (req, res) => {
   const query = req.params.query;
   const armor = await Armor.findOne({ nameLower: query.toLowerCase() });
   res.send(armor)
+}
+
+module.exports.allHelmets = async (req, res) => {
+  const helmets = await Helmet.find({});
+  res.send(helmets);
+}
+
+module.exports.oneHelmet = async (req, res) => {
+  const query = req.params.query;
+  const helmet = await Helmet.findOne({ nameLower: query.toLowerCase() });
+  res.send(helmet)
 }

@@ -16,7 +16,6 @@ db.once('open', () => {
 });
 
 const populateArmor = async () => {
-  let armorList = [];
   try {
     // Clear database
     await Armor.deleteMany({});

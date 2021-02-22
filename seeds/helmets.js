@@ -1,6 +1,6 @@
-const mongoose = require('mongoose');
+const mongoose        = require('mongoose');
 const { processFile } = require('./helpers');
-const Item     = require('../models/item');
+const Helmet          = require('../models/helmet');
 
 const databaseUrl = process.env.DATABASE_URL || 'mongodb://localhost:27017/fft';
 mongoose.connect(databaseUrl, {
@@ -15,25 +15,27 @@ db.once('open', () => {
   console.log('Database connected');
 });
 
-const populateItems = async () => {
+const populateHelmets = async () => {
   try {
     // Clear database
-    await Item.deleteMany({});
-    console.log('Cleared items collection')
+    await Helmet.deleteMany({});
+    console.log('Cleared helmet collection')
     // Read .csv file and create array of arrays
-    const objects = await processFile('items');
+    const objects = await processFile('helmet');
     // Iterate over the array and create objects
     for (let arr of objects) {
-      const newItem = new Item({
+      const newHelmet = new Helmet({
         name: arr[0],
         nameLower: arr[0].toLowerCase(),
-        effect: arr[1],
-        location: arr[2],
-        price: arr[3],
-        description: arr[4]
+        hp: arr[1],
+        mp: arr[2],
+        location: arr[3],
+        price: arr[4],
+        attribute: arr[5],
+        description: arr[6]
       });
-      await newItem.save()
-      console.log(`Created item: ${newItem.name}`)
+      await newHelmet.save()
+      console.log(`Created item: ${newHelmet.name}`)
     }
     console.log('Done')
   } catch (err) {
@@ -41,7 +43,8 @@ const populateItems = async () => {
   }
 }
 
-populateItems().then(() => {
+populateHelmets().then(() => {
   db.close();
   console.log('Database disconnected');
 });
+
