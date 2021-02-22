@@ -21,14 +21,14 @@ def scrape_page():
     driver.get(url)
 
     # Specify elements
-    # name_selector = "div.tableleftcolumn > div.tabletitletext"
-    # names_buffer = driver.find_elements_by_css_selector(name_selector)
-    # detail_selector = "table:nth-of-type(2) td.bottomrow > div.tablemaintext"
     detail_selector = "tr:not(:first-child) > td"
     details_buffer = driver.find_elements_by_css_selector(detail_selector)
 
     for detail in details_buffer:
         if detail.text == '':
+            continue
+        if detail.text == '—':
+            details.append('None')
             continue
         details.append(detail.text)
 
@@ -47,7 +47,7 @@ def write_to_csv(list):
     """Uses list to create csv file"""
     with open("armor.csv", "w") as file:
         writer = csv.writer(file)
-        writer.writerow(["Name", "Price", "Location", "HP", "MP", "Special", "Description"])
+        writer.writerow(["Name", "HP", "MP", "Location", "Price", "Special", "Description"])
         for item in list:
             writer.writerow(item)
 

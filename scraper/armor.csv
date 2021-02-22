@@ -1,37 +1,43 @@
-Name,Price,Location,HP,MP,Special,Description
-Clothes,5,0,Shop,150,—
-Leather Outfit,10,0,Shop,300,—
-Leather Vest,18,0,Shop,500,—
-Chain Vest,24,0,Shop,900,—
-Mythril Vest,30,28,Shop,"1,500",—
-Adamant Vest,36,30,Shop,"1,600",—
-Wizard Outfit,42,15,Shop,"1,900",—
-Brigandine,50,0,Shop,"2,500",—
-Judo Outfit,60,0,Shop,"400","AT Strength +1, Cancels: Dead"
-Power Sleeve,70,0,Shop,"7,000",AT Strength +2
-Earth Clothes,85,10,Shop,"10,000","Absorbs: Earth, Strengthens: Earth"
-Secret Clothes,20,0,Battle 60,—,"Speed +2, Adds: Invisible"
-Black Costume,100,0,Shop,"12,000",Cancels: Stop
-Rubber Costume,150,30,Poach: Hydra,"48,000",Cancels: Lightning
-Linen Robe,10,10,Shop,"1,200",—
-Silk Robe,20,16,Shop,"2,400",—
-Wizard Robe,30,22,Shop,"4,000",MA Strength +2
-Chameleon Robe,40,28,Shop,"5,000","Cancels: Dead, Absorbs: Holy"
-White Robe,50,34,Shop,"9,000","Halves: Fire, Lightning, Ice"
-Black Robe,60,30,Shop,"13,000","Strengthens: Fire, Lightning, Ice"
-Light Robe,75,50,Shop,"30,000",—
-Robe of Lords,100,80,Battle 62,—,"AT Strength +2, MA Strength +1, Always: Protect, Shell"
-Leather Armor,10,0,Shop,200,—
-Linen Cuirass,20,0,Shop,600,—
-Bronze Armor,30,0,Shop,800,—
-Chain Mail,40,0,Shop,"1,300",—
-Mythril Armor,50,0,Shop,"2,000",—
-Plate Mail,60,0,Shop,"3,000",—
-Gold Armor,70,0,Shop,"3,600",—
-Diamond Armor,80,0,Shop,"6,000",—
-Platinum Armor,90,0,Shop,"9,000",—
-Carbani Armor,100,0,Shop,"13,000",—
-Crystal Mail,110,0,Shop,"19,000",—
-Genji Armor,150,0,Steal: Elmdor,10,—
-Reflect Armor,130,0,Shop,"18,000",Always: Reflect
-Maximillian,200,0,Battle 63,—,—
+Name,HP,MP,Location,Price,Attribute,Description
+Clothing,5,0,"Outfitters: Magick City of Gariland (Chapter 1), Rare Treasure: Merchant City of Dorter",150,,"Made for use in battle, this is sturdier than normal clothing."
+Leather Clothing,10,0,"Outfitters: Dycedarg meeting at Eagrose Castle (Chapter 1)",300,,"Leather clothing made for battle."
+Leather Plate,10,0,"Outfitters: Zeklaus Desert (Chapter 1), Rare Treasure: Windmill Hut",500,,"The many layers of leather used in this battle clothing make it very sturdy."
+Ringmail,24,0,"Outfitters: Lenalian Plateau (Chapter 1)",900,,"A shirt made of countless interlocking metal rings."
+Mithril Vest,30,0,"Outfitters: 2nd battle Merchant City of Dorter (Chapter 2), Rare Treasure: Araguay Woods, Mining Town of Gollund",1500,,"A vest with many small mythril plates sewn into it."
+Adamant Vest,36,0,"Outfitters: Zeirchele Falls (Chapter 2), Rare Treasure: Balias Tor",1600,,"A vest with plates of an incredibly hard metal sewn into it."
+Wizard Clothing,42,15,"Outfitters: meeting with Cardinal Delacroix at Lionel Castle (Chapter 2), Rare Treasure: Lionel Castle",1900,,"A hooded outfit often worn by mages."
+Brigandine,50,0,"Outfitters: Balias Swale (Chapter 2)",2500,,"A cloth garment reinforced with plates of a mythril and platinum alloy."
+Jujitsu Gi,60,0,"Outfitters: Royal City of Lesalia (Chapter 3)",4000,"Physical Attack +1, Immune: KO","A singlet created by foreign craftsmen and favored by practitioners of the martial arts."
+Power Garb,70,0,"Outfitters: Orbonne Monastery (Chapter 3), Rare Treasure: Finnath Creek",7000,"Physical Attack +2","A supportive garment that enhances the wearer's fighting capabilities."
+Gaia Gear,85,10,"Outfitters: The Horror of Riovanes (Chapter 4), Rare Treasure: Limberry Castle Gate",10000,"Absorbs: Earth, Boosts: Earth","Clothing made from brilliantly patterned material. It confers the protection of the earth to the wearer."
+Black Garb,100,0,"Outfitters: Battle of Fort Besselat (Chapter 4)",12000,"Immune: Stop","Pitch-black clothing made for battle."
+Ninja Gear,20,0,"Mode: Rendezvous, Treasure: Midlight's Deep, Steal: Disorder in the Order",,"Speed +2, Equip: Invisible","This ninja clothing is suited to covert missions."
+Mirage Vest,120,0,"Mode: Rendezvous, Initial: Balthier",,"Speed +1, Immune: Sleep, Poison, Stone","A vest designed to increase the user's mobility. Prevents several status ailments."
+Minerva Bustier,120,0,"Mode: Melee",,"Halves: Ice, Water, Earth, Holy. Negates: Fire, Lightning, Wind, Dark. Females only","Clothing blessed by a goddess. It provides protection against various elemental magicks."
+Rubber Suit,150,50,"Poach: Greater Hydra, Mode: Melee/Rendezvous",,"Negates: Lightning","Clothing made from an unusual resin that perfectly fits the contours of the wearer's body."
+Brave Suit,160,40,"Mode: Melee",,"Equip: Regen, Reraise","This battle garb is rumored to prevent its wearer from defeat as long as he or she has the will to fight."
+Leather Armor,10,0,"Outfitters: Dycedarg meeting at Eagrose Castle (Chapter 1), Rare Treasure: Merchant City of Dorter",200,,"Armor made from layers of tanned leather."
+Linen Cuirass,20,0,"Outfitters: Dycedarg meeting at Eagrose Castle (Chapter 1)",600,,"Linen armor with a bronze breastplate."
+Bronze Armor,30,0,"Outfitters: Duke Larg meeting at Eagrose Castle (Chapter 1), Rare Treasure: Lenalian Plateau",800,,"Simply fashioned bronze armor."
+Chainmail,40,0,"Outfitters: Lenalian Plateau (Chapter 1)",1300,,"Armor fashioned from countless interlocking metal rings."
+Mythril Armor,50,0,"Outfitters: 2nd battle Merchant City of Dorter (Chapter 2), Rare Treasure: Araguay Woods, Mining Town of Gollund",2000,,"Armor made from the valuable metal known as mythril. It is surprisingly light and sturdy."
+Plate Mail,60,0,"Outfitters: Zeirchele Falls (Chapter 2), Rare Treasure: Balias Tor",3000,,"The unique design of this mythril armor greatly increases its protective qualities."
+Golden Armor,70,0,"Outfitters: Cardinal Delacroix meeting at Lionel Castle (Chapter 2), Rare Treasure: Lionel Castle",3600,,"Improved plate mail that has been decorated with gold."
+Diamond Armor,80,0,"Outfitters: Royal City of Lesalia (Chapter 3)",6000,,"Armor that has been reinforced with incredibly hard gemstones."
+Platinum Armor,90,0,"Outfitters: Walled City of Yardrow (Chapter 3), Rare Treasure: Lake Poescas",9000,,"Brilliantly shining armor made of a lustrous white alloy of mythril and platinum."
+Carabineer Mail,100,0,"Outfitters: The Horror of Riovanes (Chapter 4), Rare Treasure: Fort Besselat South Wall",13000,,"Thick mythril armor designed to withstand even the most intense shocks."
+Mirror Mail,130,0,"Outfitters: Battle of Fort Besselat (Chapter 4)",18000,"Equip: Reflect","Armor with the power to reflect magick used on the wearer."
+Crystal Armor,110,0,"Outfitters: Battle of Fort Besselat (Chapter 4), Rare Treasure: Fort Besselat Sluice",19000,,"Platinum armor reinforced in places with crystalline gemstones found deep within the earth."
+Genji Armor,150,0,"Steal: Elmdore, Mode: Rendezvous, Defeat: Aliste Rosenheim",,,"Red enameled armor made by foreign craftsmen. It completely protects the torso and back."
+Grand Armor,170,0,"Mode: Rendezvous",,"Equip: Reraise, Regen","Legendary armor given by the gods to a knight in honor of his service. Confers divine protection to the wearer."
+Maximillian,200,0,"Treasure: Midlight's Deep",,,"Top-grade armor made with advanced techniques. The materials and design make it exceedingly strong."
+Onion Armor,250,0,"Mode: Rendezvous",,"Equip: Regen, Reraise, Protect, Shell. Onion Knight only","Armor forged for swordsmen who have mastered every technique and achieved knighthood's most exalted rank."
+Hempen Robe,10,10,"Outfitters: Zeklaus Desert (Chapter 1), Rare Treasure: Windmill Hut",1200,,"A simple robe made from a single sheet of linen cloth."
+Silken Robe,20,16,"Outfitters: Lenalian Plateau (Chapter 1)",2400,,"A smooth robe made from layers of silk cloth."
+Wizard's Robe,30,22,"Outfitters: Cardinal Delacroix meeting at Lionel Castle (Chapter 2), Rare Treasure: Lionel Castle",4000,"Magick Attack +2","A hooded robe that completely covers the wearer's body."
+Chameleon Robe,40,28,"Outfitters: Royal City of Lesalia (Chapter 3)",5000,"Absorbs: Holy, Immune: KO","A robe dyed with pigments made from shining green stones."
+White Robe,50,34,"Outfitters: Orbonne Monastery (Chapter 3)",9000,"Halves: Fire, Ice, Lightning","These pure white vestments halve damage taken from the primary elements."
+Black Robe,60,30,"Outfitters: Walled City of Yardrow (Chapter 3), Rare Treasure: Limberry Castle Gate",13000,"Boosts: Fire, Ice, Lightning","These pitch-black vestments increase damage inflicted by magicks of the primary elements."
+Luminous Robe,75,50,"Outfitters: Battle of Fort Besselat (Chapter 4)",30000,,"The material in this robe has been woven from threads that glow faintly with magick."
+Lordly Robe,100,80,"Treasure: Midlight's Deep",,"Physical Attack +2, Magickal Attack +1, Equip: Protect, Shell.","Luxurious robe worn by high-ranking nobles."
+Sage's Robe,120,100,"Mode: Melee",,"Halves: Fire, Ice, Lightning, Water, Wind, Earth, Holy, Dark","A robe woven from threads that shimmer in all colors of the rainbow. Halves damage taken from elemental magick."

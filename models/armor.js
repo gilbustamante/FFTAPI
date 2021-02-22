@@ -4,11 +4,11 @@ const Schema   = mongoose.Schema;
 const ArmorSchema = new Schema({
   name: String,
   nameLower: String,
-  price: Number,
-  location: String,
   hp: Number,
   mp: Number,
-  special: String,
+  location: String,
+  price: String,
+  attribute: String,
   description: String
 });
 
