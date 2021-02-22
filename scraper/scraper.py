@@ -7,58 +7,36 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 def scrape_page():
-    """Scrapes the given URL and returns lists of names and details"""
-    # URL to scrape
-    url = "https://finalfantasy.fandom.com/wiki/Final_Fantasy_Tactics_items"
+    """Scrapes the given URL and returns list for each item"""
+    names = []
+    details = []
+    items = []
+
+    # URLs to scrape, uncomment one
+    url = "http://www.ffmages.com/final-fantasy-tactics/armor/"
+    # url = "http://www.ffmages.com/final-fantasy-tactics/weapons/"
 
     # Setup
     driver = webdriver.Firefox()
     driver.get(url)
 
     # Specify elements
-    names_buffer = driver.find_elements_by_css_selector("span.attach")
-    details_buffer = driver.find_elements_by_css_selector("tbody tr td")
+    # name_selector = "div.tableleftcolumn > div.tabletitletext"
+    # names_buffer = driver.find_elements_by_css_selector(name_selector)
+    # detail_selector = "table:nth-of-type(2) td.bottomrow > div.tablemaintext"
+    detail_selector = "tr:not(:first-child) > td"
+    details_buffer = driver.find_elements_by_css_selector(detail_selector)
 
-    # Define lists
-    names = []
-    details = []
-
-    # Populate temp name list
-    for name in names_buffer:
-        names.append(name.text)
-
-    # Populate detail list
-    # 'if' statement is because a few of the results are empty strings
     for detail in details_buffer:
-        if detail.text:
-            details.append(detail.text)
-    
-    # Some of the detail lines have unnecessary text; this removes it
-    i = 0
-    while i < len(details):
-        if "\n" in details[i]:
-            sep = "\n"
-            details[i] = details[i].split(sep)[0]
-        i += 1
-
-    # Close browser window and return
-    driver.close()
-    return names, details
-
-def create_items_list():
-    """Creates a list of items to be added to csv file"""
-    # Scrape page and return lists of item names + their details
-    names, details = scrape_page()
+        if detail.text == '':
+            continue
+        details.append(detail.text)
 
     # Split big list into smaller lists grouped by item
-    items = split_list(details, 4)
-
-    # Prepend the item's name to each list
-    i = 0
-    while i < len(items):
-        items[i].insert(0, names[i])
-        i += 1
-
+    items = split_list(details, 6)
+        
+    # Close browser window and return
+    driver.close()
     return items
 
 def split_list(list, n):
@@ -67,12 +45,12 @@ def split_list(list, n):
     
 def write_to_csv(list):
     """Uses list to create csv file"""
-    with open("items.csv", "w") as file:
+    with open("armor.csv", "w") as file:
         writer = csv.writer(file)
-        writer.writerow(["Name", "Effect", "Location", "Price", "Description"])
+        writer.writerow(["Name", "Price", "Location", "HP", "MP", "Special", "Description"])
         for item in list:
             writer.writerow(item)
 
 if __name__ == '__main__':
-    item_list = create_items_list()
+    item_list = scrape_page()
     write_to_csv(item_list)
