@@ -1,14 +1,21 @@
-const express = require('express');
-const api     = require('../controllers/api');
-const router  = express.Router();
+const express    = require('express');
+const api        = require('../controllers/api');
+const catchAsync = require('../utils/catchAsync');
+const router     = express.Router();
 
 router.route('/')
-  .get(api.allEndpoints)
+  .get(catchAsync(api.allEndpoints))
 
 router.route('/item')
-  .get(api.allItems)
+  .get(catchAsync(api.allItems))
 
 router.route('/item/:query')
-  .get(api.oneItem)
+  .get(catchAsync(api.oneItem))
+
+router.route('/armor')
+  .get(catchAsync(api.allArmor))
+
+router.route('/armor/:query')
+  .get(catchAsync(api.oneArmor))
 
 module.exports = router;
