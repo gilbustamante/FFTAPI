@@ -6,7 +6,7 @@ const path     = require('path');
 module.exports.processFile = async (filename) => {
   let records = []
   const parser = fs
-    .createReadStream(path.join(__dirname, '..', 'scraper', `${filename}.csv`))
+    .createReadStream(path.join(__dirname, '..', 'data', `${filename}.csv`))
     .pipe(parse({
       delimiter: ',',
       from_line: 2
