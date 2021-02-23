@@ -2,6 +2,12 @@ if (process.env.NOVE_ENV !== 'production') {
   require('dotenv').config();
 }
 
+/////////////////////////////////
+/////////////////////////////////
+// TODO: Add express obfuscation 
+/////////////////////////////////
+/////////////////////////////////
+
 const mongoose = require('mongoose');
 const session  = require('express-session');
 const flash    = require('connect-flash');

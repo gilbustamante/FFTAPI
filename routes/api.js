@@ -24,4 +24,10 @@ router.route('/helmet')
 router.route('/helmet/:query')
   .get(catchAsync(api.oneHelmet))
 
+router.route('/weapon')
+  .get(catchAsync(api.allWeapons))
+
+router.route('/weapon/:query')
+  .get(catchAsync(api.oneWeapon))
+
 module.exports = router;
