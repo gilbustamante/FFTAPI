@@ -6,34 +6,34 @@ const router     = express.Router();
 router.route('/')
   .get(catchAsync(api.allEndpoints))
 
-router.route('/item')
+router.route('/items')
   .get(catchAsync(api.allItems))
 
-router.route('/item/:query')
+router.route('/items/:query')
   .get(catchAsync(api.oneItem))
 
-router.route('/armor')
+router.route('/armors')
   .get(catchAsync(api.allArmor))
 
-router.route('/armor/:query')
+router.route('/armors/:query')
   .get(catchAsync(api.oneArmor))
 
-router.route('/helmet')
+router.route('/helmets')
   .get(catchAsync(api.allHelmets))
 
-router.route('/helmet/:query')
+router.route('/helmets/:query')
   .get(catchAsync(api.oneHelmet))
 
-router.route('/weapon')
+router.route('/weapons')
   .get(catchAsync(api.allWeapons))
 
-router.route('/weapon/:query')
+router.route('/weapons/:query')
   .get(catchAsync(api.oneWeapon))
 
-router.route('/accessory')
+router.route('/accessories')
   .get(catchAsync(api.allAccessories))
 
-router.route('/accessory/:query')
+router.route('/accessories/:query')
   .get(catchAsync(api.oneAccessory))
 
 module.exports = router;

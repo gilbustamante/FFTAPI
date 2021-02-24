@@ -3,12 +3,12 @@
 <hr>
 <p>FFTAPI is an API for item, ability, and character stats in the tactical RPG <a href="http://dlgames.square-enix.com/fft/en/">Final Fantasy Tactics: The War of the Lions</a>. Currently there are only Accessory, Armor, Helmet, Item, and Weapon endpoints, but the rest are being worked on.</p>
 <h3>Usage</h3>
-<p>Making a request to any of the following endpoints (with the exception of <code>/api/random</code>) in the form of <code>/api/categoryName/itemName</code> will return a JSON response with the object's details. Making a request to the category itself while omitting an item name will return all objects in that category.</p>
+<p>Making a request to any of the following endpoints (with the exception of <code>/api/random</code>) in the form of <code>/api/categoryName/itemName</code> will return a JSON response with the object's details. Making a request to the category itself while omitting an item name will return all objects in that category. Requesing <code>/api</code> itself will respond with a list of categories.</p>
 <h3>Example:</h3>
 <p>
   Request: 
   <br>
-  <code>http://localhost:3000/api/weapon/longsword</code>
+  <code>http://localhost:3000/api/weapons/longsword</code>
   <br>
   Response: 
 </p>
@@ -29,10 +29,10 @@
 </pre>
 <h2>Endpoints:</h2>
 <ul>
-  <li><a href="/api/accessory">Accessories</a></li>
-  <li><a href="/api/armor">Armor</a></li>
-  <li><a href="/api/helmet">Helmets</a></li>
-  <li><a href="/api/item">Items</a></li>
-  <li><a href="/api/weapon">Weapons</a></li>
+  <li><a href="/api/accessories">Accessories</a></li>
+  <li><a href="/api/armors">Armor</a></li>
+  <li><a href="/api/helmets">Helmets</a></li>
+  <li><a href="/api/items">Items</a></li>
+  <li><a href="/api/weapons">Weapons</a></li>
   <li>Random</li>
 </ul>

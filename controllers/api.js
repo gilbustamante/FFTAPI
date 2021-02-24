@@ -1,11 +1,21 @@
 const Accessory = require('../models/accessory');
+const mongoose  = require('mongoose');
 const Armor     = require('../models/armor');
 const Helmet    = require('../models/helmet');
 const Item      = require('../models/item');
 const Weapon    = require('../models/weapon');
 
 module.exports.allEndpoints = async (req, res) => {
-  res.send('JSON response will be here');
+  mongoose.connection.db.listCollections().toArray((err, nameObjects) => {
+    if (err) {
+      console.log(err);
+    }
+    let names = [];
+    for (let name of nameObjects) {
+      names.push(name.name);
+    }
+    res.send(names);
+  })
 }
 
 module.exports.allItems = async (req, res) => {
