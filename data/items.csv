@@ -1,21 +1,21 @@
 Name,Effect,Location,Price,Description
-Potion,Restores: 30 HP,Outfitters: After Magick City of Gariland (Chapter 1),50,Medicine that restores HP. Deals damage when used against the undead.
-Hi-Potion,Restores: 70 HP,Outfitters: After Zeklaus Desert (Chapter 1),200,Medicine that restores HP. More effective than a standard Potion.
-X-Potion,Restores: 150 HP,Outfitters: Defeat Cúchulainn at Lionel Castle (Chapter 3),700,Medicine that restores HP. More effective than a Hi-Potion.
-Ether,Restores: 20 MP,Outfitters: Cardinal Delacroix meeting at Lionel Castle (Chapter 2),200,Medicine that restores MP.
-Hi-Ether,Restores: 50 MP,Outfitters: Defeat Wiegraf at Orbonne Monastery (Chapter 3),600,Medicine that restores MP. More effective than a standard Ether.
-Elixir,Restores: All HP and MP,"Rare Treasure: Airship Graveyard, Dorvauldar Marsh, Lost Halidom",10,Valuable medicine that fully restores both HP and MP.
-Antidote,Removes: Poison,"Outfitters: Chapter 1, Magick City of Gariland",50,Medicine that neutralizes poison from enemy attacks.
-Eye Drops,Removes: Blind,"Outfitters: Chapter 1, Magick City of Gariland (Chapter 1)",50,Medicine that restores sight to those blinded by magick or other causes.
-Echo Herbs,Removes: Silence,Outfitters: Magick City of Gariland (Chapter 1),50,"Medicine that restores the power of speech to silenced units, allowing them to cast spells."
-Maiden's Kiss,Removes: Toad,Outfitters: Dycedarg meeting at Eagrose Castle (Chapter 1),50,Medicine that restores a unit who has been transformed into a toad.
-Gold Needle,Removes: Stone,Outfitters: Dycedarg meeting at Eagrose Castle (Chapter 1),100,A tool that restores a unit who has been turned to stone. It breaks after one use.
-Holy Water,"Removes: Undead, Vampire",Outfitters: 2nd battle at Merchant City of Dorter (Chapter 2),2000,Holy water that restores life to a unit who has been touched by the curse of undeath.
-Remedy,"Removes: Stone, Blind, Confuse, Silence, Oil, Toad, Poison, Sleep",Outfitters: Cardinal Delacroix meeting at Lionel Castle (Chapter 2),350,A nostrum that cures all manner of status effects.
-Phoenix Down,Removes: KO,Outfitters: Magick City of Gariland (Chapter 1),300,Down feathers with the power to restore a unit who has fallen in battle. Consumed after one use.
-Flameburst Bomb,Attack: 8,Outfitters: Cardinal Delacroix meeting at Lionel Castle (Chapter 2),250,An explosive sphere that deals fire damage when thrown.
-Snowmelt Bomb,Attack: 8,Outfitters: Cardinal Delacroix meeting at Lionel Castle (Chapter 2),250,An explosive sphere that deals water damage when thrown.
-Spark Bomb,Attack: 8,Outfitters: Cardinal Delacroix meeting at Lionel Castle (Chapter 2),250,An explosive sphere that deals lightning damage when thrown.
-Shuriken,Attack: 4,Outfitters: 2nd battle Merchant City of Dorter (Chapter 2),50,A throwing weapon for ninjas. It spins in the air before hitting its target.
-Fuma Shuriken,Attack: 7,Outfitters: Royal City of Lesalia (Chapter 3),300,A pinwheel-shaped throwing star that flies at very high speeds.
-Yagyu Darkrood,Attack: 10,Outfitters: The Horror of Riovanes at Riovanes Castle (Chapter 4),1000,A cross-shaped throwing star used by a famous ninja school. Its blades are serrated for maximum damage.
+Potion,"Restores: 30 HP","Outfitters: After Magick City of Gariland (Chapter 1)",50,"Medicine that restores HP. Deals damage when used against the undead."
+Hi-Potion,"Restores: 70 HP","Outfitters: After Zeklaus Desert (Chapter 1)",200,"Medicine that restores HP. More effective than a standard Potion."
+X-Potion,"Restores: 150 HP","Outfitters: Defeat Cúchulainn at Lionel Castle (Chapter 3)",700,"Medicine that restores HP. More effective than a Hi-Potion."
+Ether,"Restores: 20 MP","Outfitters: Cardinal Delacroix meeting at Lionel Castle (Chapter 2)",200,"Medicine that restores MP."
+Hi-Ether,"Restores: 50 MP","Outfitters: Defeat Wiegraf at Orbonne Monastery (Chapter 3)",600,"Medicine that restores MP. More effective than a standard Ether."
+Elixir,"Restores: All HP and MP","Rare Treasure: Airship Graveyard, Dorvauldar Marsh, Lost Halidom",10,"Valuable medicine that fully restores both HP and MP."
+Antidote,"Removes: Poison","Outfitters: Chapter 1, Magick City of Gariland",50,"Medicine that neutralizes poison from enemy attacks."
+Eye Drops,"Removes: Blind","Outfitters: Chapter 1, Magick City of Gariland (Chapter 1)",50,"Medicine that restores sight to those blinded by magick or other causes."
+Echo Herbs,"Removes: Silence","Outfitters: Magick City of Gariland (Chapter 1)",50,"Medicine that restores the power of speech to silenced units, allowing them to cast spells."
+Maiden's Kiss,"Removes: Toad","Outfitters: Dycedarg meeting at Eagrose Castle (Chapter 1)",50,"Medicine that restores a unit who has been transformed into a toad."
+Gold Needle,"Removes: Stone","Outfitters: Dycedarg meeting at Eagrose Castle (Chapter 1)",100,"A tool that restores a unit who has been turned to stone. It breaks after one use."
+Holy Water,"Removes: Undead, Vampire","Outfitters: 2nd battle at Merchant City of Dorter (Chapter 2)",2000,"Holy water that restores life to a unit who has been touched by the curse of undeath."
+Remedy,"Removes: Stone, Blind, Confuse, Silence, Oil, Toad, Poison, Sleep","Outfitters: Cardinal Delacroix meeting at Lionel Castle (Chapter 2)",350,"A nostrum that cures all manner of status effects."
+Phoenix Down,"Removes: KO","Outfitters: Magick City of Gariland (Chapter 1)",300,"Down feathers with the power to restore a unit who has fallen in battle. Consumed after one use."
+Flameburst Bomb,"Attack: 8","Outfitters: Cardinal Delacroix meeting at Lionel Castle (Chapter 2)",250,"An explosive sphere that deals fire damage when thrown."
+Snowmelt Bomb,"Attack: 8","Outfitters: Cardinal Delacroix meeting at Lionel Castle (Chapter 2)",250,"An explosive sphere that deals water damage when thrown."
+Spark Bomb,"Attack: 8","Outfitters: Cardinal Delacroix meeting at Lionel Castle (Chapter 2)",250,"An explosive sphere that deals lightning damage when thrown."
+Shuriken,"Attack: 4","Outfitters: 2nd battle Merchant City of Dorter (Chapter 2)",50,"A throwing weapon for ninjas. It spins in the air before hitting its target."
+Fuma Shuriken,"Attack: 7","Outfitters: Royal City of Lesalia (Chapter 3)",300,"A pinwheel-shaped throwing star that flies at very high speeds."
+Yagyu Darkrood,"Attack: 10","Outfitters: The Horror of Riovanes at Riovanes Castle (Chapter 4)",1000,"A cross-shaped throwing star used by a famous ninja school. Its blades are serrated for maximum damage."
