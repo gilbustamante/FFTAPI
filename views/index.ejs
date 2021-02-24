@@ -1,10 +1,34 @@
 <%- layout('layouts/boilerplate') %>
 <h1>Final Fantasy Tactics API</h1>
 <hr>
-<p>FFTAPI is an API for item, ability, and character stats in the tactical RPG <a href="http://dlgames.square-enix.com/fft/en/">Final Fantasy Tactics: The War of the Lions</a>. Currently there are only Item endpoints, but the rest are being worked on.</p>
+<p>FFTAPI is an API for item, ability, and character stats in the tactical RPG <a href="http://dlgames.square-enix.com/fft/en/">Final Fantasy Tactics: The War of the Lions</a>. Currently there are only Accessory, Armor, Helmet, Item, and Weapon endpoints, but the rest are being worked on.</p>
+<h3>Usage</h3>
+<p>Making a request to any of the following endpoints (with the exception of <code>/api/random</code>) in the form of <code>/api/categoryName/itemName</code> will return a JSON response with the object's details. Making a request to the category itself while omitting an item name will return all objects in that category.</p>
+<h3>Example:</h3>
+<p>
+  Request: 
+  <br>
+  <code>http://localhost:3000/api/weapon/longsword</code>
+  <br>
+  Response: 
+</p>
+<pre class="border border-secondary rounded shadow">
+  {
+    "_id":"6035a229773244214eaebb4c",
+    "name":"Longsword",
+    "nameLower":"longsword",
+    "atk":5,
+    "def":10,
+    "mag":0,
+    "location":"Outfitters: Dycedarg meeting at Eagrose Castle (Chapter 1), Treasure: Merchant City of Dorter (rare)",
+    "price":"900",
+    "attribute":"",
+    "description":"This straight and sharp double-edged blade can be used for either stabbing or slashing.",
+    "__v":0
+  }
+</pre>
 <h2>Endpoints:</h2>
 <ul>
-  <li>Abilities</li>
   <li><a href="/api/accessory">Accessories</a></li>
   <li><a href="/api/armor">Armor</a></li>
   <li><a href="/api/helmet">Helmets</a></li>

@@ -9,10 +9,25 @@ body {
     font-size: 1.2em;
 }
 
-main {
-    background: rgba(180, 180, 180, 0.5)
+code {
+    color:rgb(50, 50, 50);
+    background: rgba(180, 180, 180, 0.8);
+    padding-left: 7px;
+    padding-right: 7px;
 }
 
 li {
     list-style: url("/img/sword.gif");
+}
+
+main {
+    background: rgba(180, 180, 180, 0.5)
+}
+
+pre {
+    background: rgba(180, 180, 180, 0.8);
+    padding: 5px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-size: 0.9rem;
 }
